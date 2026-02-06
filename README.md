@@ -110,7 +110,7 @@ Example:
 ```python
 from transformers import pipeline
 bert_sentiment = pipeline("sentiment-analysis")
-bert_sentiment("I love this product but the battery is bad")
+bert_sentiment("I love this product but the battery is bad") '''
 
 ---
 
@@ -150,7 +150,9 @@ Low-cost deployments
 
 Real-time systems with strict latency limits
 
-🛠️ Technologies Used
+
+
+### 🛠️ Technologies Used
 
 Python
 
@@ -164,7 +166,8 @@ Gensim (Word2Vec)
 
 HuggingFace Transformers
 
-Streamlit
+
+### Streamlit
 
 Ngrok (for Colab deployment demo)
 
