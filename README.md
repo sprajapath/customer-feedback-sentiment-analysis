@@ -111,3 +111,67 @@ Example:
 from transformers import pipeline
 bert_sentiment = pipeline("sentiment-analysis")
 bert_sentiment("I love this product but the battery is bad")
+
+---
+
+###✅ Phase 6 — Deployment using Streamlit
+
+- A simple Streamlit web app was created where users can:
+
+- Enter feedback text
+
+- Click analyze
+
+- Get sentiment + confidence score
+
+Example app code is included in the project.
+
+📊 Model Comparison Summary
+Model	Strengths	Weaknesses	Best Use Case
+TF-IDF + LR	Fast, interpretable	No context	Baseline / low-cost
+Word2Vec	Captures semantics	No context awareness	Medium NLP tasks
+BERT	Context-aware, accurate	Heavy compute	Production-grade NLP
+
+---
+
+###✅Final Recommendation
+
+For real-world deployment, BERT is recommended due to:
+
+Better accuracy
+
+Better handling of language complexity
+
+Minimal feature engineering
+
+TF-IDF can still be useful for:
+
+Low-cost deployments
+
+Real-time systems with strict latency limits
+
+🛠️ Technologies Used
+
+Python
+
+Pandas, NumPy
+
+NLTK
+
+Scikit-learn
+
+Gensim (Word2Vec)
+
+HuggingFace Transformers
+
+Streamlit
+
+Ngrok (for Colab deployment demo)
+
+📌 How to Run the Streamlit App Locally
+1️⃣ Install dependencies
+pip install streamlit transformers torch
+
+2️⃣ Run the app
+bash
+streamlit run app.py
